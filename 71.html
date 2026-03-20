@@ -153,14 +153,14 @@
 </div>
 
 <script>
-    // 购买提示
+    
     const btn = document.getElementById('viewBtn');
     const tipText = document.getElementById('tipText');
     btn.addEventListener('click', () => {
         tipText.textContent = "服务器繁忙，请稍后重试";
     });
 
-    // 邀请码验证
+    
     const CORRECT_HASH = "4b43b5658695ac473edb45406ecfeb7346c6787d2bcc7f932483d12e1bf8362e";
     async function sha256(message) {
         const msgBuffer = new TextEncoder().encode(message);
